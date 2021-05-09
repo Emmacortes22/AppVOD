@@ -1,3 +1,4 @@
+//If the server doesn't work you can uncommented this array of objects and commented the lines 12, 13, 14 and 15.
 // const videos = [
 //     { "img": "https://picsum.photos/350/250/?random&t=", "title": "Title1", "owner": "Owner1" },
 //     { "img": "https://picsum.photos/350/250/?random&t=", "title": "Title2", "owner": "Owner2" },
@@ -11,16 +12,16 @@
 fetch('http://localhost:3000/videos')
 .then(response => response.json())
 .then(function(data) {
-    console.log(data);
     let videos = data;
     const div_videos = document.getElementById('videos');
 
     for (const video in videos) {
+        //Create news elements
         const div_video = document.createElement('div');
         const img_video = document.createElement('img');
         const title_video = document.createElement('h5');
         const owner_video = document.createElement('p');
-
+        //Edit the new elements and add to div
         div_video.classList.add('col-xl-3', 'col-lg-4', 'col-sm-6', 'col-12', 'video');
         img_video.src = videos[video].img + Math.random();
         img_video.classList.add('mb-1');
@@ -34,7 +35,7 @@ fetch('http://localhost:3000/videos')
     }
 
     const img_videos = document.querySelectorAll('.video img');
-
+    //Function to add event listener in all videos 
     for (const video of img_videos) {
         video.addEventListener('click', function () {
             alert('Video clicked!');
