@@ -40,7 +40,7 @@ sudo docker run --name vodDB -e MYSQL_ROOT_PASSWORD=2222 -d mysql:latest
 ```bash
 sudo docker container inspect vodDB | grep "IPAddress"
 ```
-8. Run server and go to web page AppVOD/web_page/app.html
+8. Run server and open the file AppVOD/web_page/app.html with the browser
 ```bash
 node server.js
 ```
