@@ -34,11 +34,13 @@ sudo npm install express mysql cors --save
 sudo apt install docker-ce
 sudo docker run --name vodDB -e MYSQL_ROOT_PASSWORD=2222 -d mysql:latest
 ```
-6. Know the IP of the container and put it in the file *db.config.js* in the folder app/config
+6. Acces to DB with a client like MySQL Workbench and execute the script *vodDBQuery.sql* in folder mysql_script
+
+7. Know the IP of the container and put it in the file *db.config.js* in the folder app/config
 ```bash
-sudo docker container inspect vodDB
+sudo docker container inspect vodDB | grep "IPAddress"
 ```
-7. Run server and go to web page AppVOD/web_page/app.html
+8. Run server and go to web page AppVOD/web_page/app.html
 ```bash
 node server.js
 ```
