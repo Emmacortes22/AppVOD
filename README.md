@@ -1,67 +1,44 @@
 # VOD Application  
-## Prerequisites
-- Node.js  
-- npm
-- Docker
-- My
+## **Prerequisites**
+- Node.js >= v12.22.1
+- npm >= 6.14.12
+    - Express >= 4.17.1
+    - MySQL >= 2.18.1
+    - Cors >= 2.8.5
+- Docker >= 20.10.6
+    - MySQL
+
+## **Operarting System**
+Ubuntu 18.04
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-# Heading level 1
-## Heading level 1
-
-Heading level 1
-===============
-
-First line with two spaces.<br>
-shdokahsgdo.
-
-> Hello  
-> - Bye
-> - See you.  
->
-> *Chachacha* is the best **dance**
-
-```javascript
-asdf = 5;
-
-
+## **Step-By-Step**
+1. Install nodejs && npm
+```bash
+sudo apt install nodejs
 ```
-
-1. First item
-2. Second item
-
-I use `nano` for edit scripts  
-
-
-***  
-
-Go to [Google](www.google.com).  
-
-<http://localhost:3000/videos>
-
+2. Clone the repository
+```bash
+git clone https://github.com/Emmacortes22/AppVOD.git
+```
+3. Go to directory of application
+```bash
+cd AppVOD/
+```
+4. Install Express, MySQL and Cors 
+```bash
+sudo npm install express mysql cors --save 
+```
+5. Install Docker and pull MySQL
+```bash
+sudo apt install docker-ce
+sudo docker run --name vodDB -e MYSQL_ROOT_PASSWORD=2222 -d mysql:latest
+```
+6. Know the IP of the container and put it in the file *db.config.js* in the folder app/config
+```bash
+sudo docker container inspect vodDB
+```
+7. Run server and go to web page AppVOD/web_page/app.html
+```bash
+node server.js
+```
