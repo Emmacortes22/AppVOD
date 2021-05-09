@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts Family and Icons-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/722a7c1b41.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app.css">
+    <title>VOD</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a href="#" class="navbar-brand"><img src="images/logo.png" alt="logo"></a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+                <form class="navbar-form">
+                    <div class="input-group search-box">
+                        <input type="text" id="search" class="form-control" placeholder="Search video">
+                        <span class="input-group-addon"><i class="material-icons"></i></span>
+                    </div>
+                </form>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link notifications"><i class="fa fa-bell-o"></i><span
+                            class="badge">1</span></a>
+                    <div class="nav-item dropdown">
+                        <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"
+                            aria-expanded="false"><img src="images/avatar.jpg" class="avatar" alt="Avatar"> Emma Cortés
+                            <b class="caret"></b></a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item"><i class="fa fa-user-o"></i> Profile</a>
+                            <a href="#" class="dropdown-item"><i class="fa fa-sliders"></i> Settings</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item"><i class="material-icons"></i> Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-start p-4" id="videos">
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer font-small">
+        <div class="footer-copyright text-center py-3">© 2021 Copyright:
+            <a href="#"> VODvideos.com</a>
+        </div>
+    </footer>
+    <!-- Optional Javascript -->
+    <script src="js/app.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

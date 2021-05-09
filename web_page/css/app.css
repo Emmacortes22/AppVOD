@@ -1,0 +1,63 @@
+.navbar-brand img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.navbar .nav-item i {
+    font-size: 18px;
+}
+
+.nav-link img {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    margin: -8px 0;
+    float: left;
+    margin-right: 10px;
+}
+
+.navbar-form {
+    width: 50%;
+}
+
+.search-box .input-group-addon {
+    min-width: 35px;
+    border: none;
+    position: absolute;
+    right: 0;
+    z-index: 9;
+    padding: 7px;
+}
+
+.form-control {
+    display: block;
+    color: #495057;
+    border-radius: .25rem;
+}
+
+.navbar a.notifications {
+    position: relative;
+    margin-right: 10px;
+}
+
+.navbar a.notifications .badge {
+    margin-left: -8px;
+}
+
+.navbar .badge {
+    color: #fff;
+    background: #f44336;
+    font-size: 11px;
+    border-radius: 20px;
+    position: absolute;
+    min-width: 10px;
+    padding: 4px 6px 0;
+    min-height: 18px;
+    top: 5px;
+}
+
+.video img{
+    width: 100%;
+}
