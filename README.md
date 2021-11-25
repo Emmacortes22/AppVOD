@@ -13,7 +13,7 @@ Ubuntu 18.04
 
 
 ## **Step-By-Step**
-1. Install nodejs && npm
+1. Install nodejs & npm
 ```bash
 sudo apt install nodejs
 ```
